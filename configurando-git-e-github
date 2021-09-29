@@ -1,0 +1,41 @@
+INICIANDO GIT
+
+com o terminal no diretório da pasta:
+git init
+
+git add <nomedoarquivo> 
+ou
+git add .= envia arquivos apra área de "stading", prontos para serem commitados 
+
+git commit -m 'comentário' 
+
+cria-se um repositório no github e copia-se o endereço de link
+git remote add origin https://github.com/moises-santos/javascript-estudo-1.git
+= conecta-se ao github remoto
+
+git push -u origin main = envia as modificações locais para origin, ou seja, remoto
+
+
+# comandos extras:
+
+git status = mostra o status dos arquivos
+git branch -M 'nome' = renomeia a branch que vc está
+
+git config --global user.name "your_github_username"
+git config --global user.email "your_github_email"
+git config -l
+
+
+git config --global credential.helper cache
+
+github para linux
+https://github.com/shiftkey/desktop
+
+wget -qO - https://packagecloud.io/shiftkey/desktop/gpgkey | sudo tee /etc/apt/trusted.gpg.d/shiftkey-desktop.asc > /dev/null
+
+sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/shiftkey/desktop/any/ any main" > /etc/apt/sources.list.d/packagecloud-shiftky-desktop.list'
+
+sudo apt-get update
+
+sudo apt install github-desktop
+
