@@ -15,16 +15,10 @@ git remote add origin https://github.com/moises-santos/javascript-estudo-1.git
 
 git push -u origin main = envia as modificações locais para origin, ou seja, remoto
 
-
 # comandos extras:
 
 git status = mostra o status dos arquivos
 git branch -M 'nome' = renomeia a branch que vc está
-
-git config --global user.name "your_github_username"
-git config --global user.email "your_github_email"
-git config -l
-
 
 git config --global credential.helper cache
 
@@ -38,4 +32,6 @@ sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/shiftkey/desktop/any/
 sudo apt-get update
 
 sudo apt install github-desktop
+
+talvez seja necessário gerar senha de altentificação ssh, sei la...
 
