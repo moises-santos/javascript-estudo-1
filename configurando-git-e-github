@@ -34,4 +34,3 @@ sudo apt-get update
 sudo apt install github-desktop
 
 talvez seja necessário gerar senha de altentificação ssh, sei la
-
