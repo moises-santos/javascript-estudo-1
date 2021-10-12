@@ -35,15 +35,16 @@ const listaDeDestinos = new Array(
 )
 
 
-const idadeComprador = 19
-const estaAcompanhada = true
+const idadeComprador = 22
+const estaAcompanhada = false
 const temPassagemComprada = true
-const destino = `Rio de Janeiro`
+const destino = `Espírito Santo`
 
 listaDeDestinos.push(`Curitiba`) // add item na lista
 // listaDeDestinos.splice(1,1) // remove item na lista
 
 console.log(`Destinos possíveis:`)
+console.log(listaDeDestinos)
 
 // estudando condicionais 11/10/2021
 // estudando operadores lógicos encadeados 11/10/2021
@@ -81,12 +82,29 @@ console.log(`Destinos possíveis:`)
 
 const podeComprar = idadeComprador >= 18 || estaAcompanhada
 
-let contador = 0
-while (contador<3){
-  if(listaDeDestinos[contador] == destino){
-    console.log("Destino existente")
-  }else{
-    console.log("Destino não existe")
+// let contador = 0
+let destinoExite = false
+// while (contador<3){
+//   if(listaDeDestinos[contador] == destino){
+//     // console.log("Destino existente")
+//     destinoExite = true
+//     break
+//   }
+//   contador += 1
+// }
+
+for (let cont = 0; cont < 3; cont ++){
+  if(listaDeDestinos[cont] == destino){
+    // console.log("Destino existente")
+    destinoExite = true
+    break
   }
-  contador += 1
+}
+
+console.log("Destino existe:", destinoExite)
+
+if(podeComprar && destinoExite){
+  console.log("Boa Viagem")
+}else{
+  console.log("Desculpe tivemos um erro!")
 }
